@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-bg-color;
+}
+.footer__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer__join-us {
+  margin-left: 70px;
+  margin-top: 12px;
+  color: $primary-white-color;
+}
+
+.footer__subscribe {
+  margin-left: 93px;
+  margin-top: 12px;
+  color: $primary-white-color;
+}
