@@ -1,13 +1,17 @@
 .subscribe-form {
   position: relative;
-  display: flex;
-  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.subscribe-form__email {
+.subscribe-form__input {
+  margin-bottom: 20px;
   height: 50px;
+  width: 100%;
   min-width: 358px;
-  margin-right: 12px;
   padding-left: 16px;
   background-color: $dark-bg-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -17,16 +21,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 12px;
+  }
 }
 .subscribe-form__label {
   position: absolute;
   left: 16px;
+  top: 15px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  .subscribe-form__email:focus + &,
-  .subscribe-form__email:not(:placeholder-shown) + & {
+  .subscribe-form__input:focus + &,
+  .subscribe-form__input:not(:placeholder-shown) + & {
     opacity: 0;
   }
 }

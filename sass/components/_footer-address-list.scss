@@ -1,10 +1,17 @@
 .footer-address-list {
+  margin-bottom: 60px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 }
 

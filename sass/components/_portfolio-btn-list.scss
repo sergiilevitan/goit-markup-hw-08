@@ -1,9 +1,23 @@
 .portfolio-btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  &__item:not(:last-child) {
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.portfolio-btn-list__item {
+  margin-bottom: 15px;
+  &:not(:last-child) {
     margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 

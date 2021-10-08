@@ -1,11 +1,24 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 .clients-list__item {
-  width: calc((100%-150px) / 6);
   height: 92px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  width: calc((100% - 60px) / 2);
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+    margin: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 

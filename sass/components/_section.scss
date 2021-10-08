@@ -1,20 +1,33 @@
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .section--without-padding {
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 .section--bg-gray {
   background-color: $lightgray-bg-color;
 }
 .section__secondary-title {
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  font-size: 28px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .section__secondary-title--visually-hidden {
